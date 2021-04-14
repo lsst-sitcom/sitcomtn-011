@@ -108,6 +108,159 @@ floor of the observatory.
 \caption{Bulkhead Plate with Temporary Central Rod}
 \label{fig:figure_1}
 \end{figure}
+
+\begin{figure}
+\begin{center}
+  \includegraphics[width=6.5in,height=5.96389in]{media/Figure_2.png}
+\end{center}
+\caption{Camera Rotator Temporary Connection Bar}
+\label{fig:figure_2}
+\end{figure}
+
+\hypertarget{objective}{%
+\subsection{Objective}\label{objective}}
+
+The objective of this characterization is to find the allowable position
+range of the positive and negative limit switches and provide a
+recommendation of where they should be positioned. This requires finding
+the exact position that the limit switches are currently activated,
+finding the back off distance required to release the limit switches,
+and finding the maximum distance for the CCW and Camera Rotator to come
+to a complete stop after activating the limit switches.
+
+\hypertarget{requirements}{%
+\subsection{Requirements}\label{requirements}}
+
+The following are the relevant requirements for the synchronous motion
+between the CCW and the Camera Rotator.
+
+\underline{LTS-103}
+
+\begin{itemize}
+\item
+  3.10.13 MCS Camera Cable Wrap Positioning Command
+
+  \begin{itemize}
+  \item
+    \textbf{Specification:} The camera cable wrap shall be slaved to the
+    camera rotator.
+  \end{itemize}
+\end{itemize}
+
+LTS-218
+
+\begin{itemize}
+\item
+  3.3.7 Rotation Drive Synchronization with Camera Rotator
+
+  \begin{itemize}
+  \item
+    \textbf{Specification:} During slewing and tracking, the camera
+    cable wrap rotation shall remain synchronized with the camera
+    rotator to better than 2.2 degrees. An absolute rotation sensing
+    encoder shall be incorporated on the rotation drive unit to provide
+    position feedback to the telescope control system (TCS).
+  \end{itemize}
+\item
+  3.3.8.1 Slewing Velocity Range
+
+  \begin{itemize}
+  \item
+    \textbf{Specification:} The rotation drive unit shall be able to
+    reach any velocity between 0 and 3.5deg/sec with a goal of
+    5.25deg/sec in both rotation directions.
+  \end{itemize}
+\item
+  3.16 Safety Pull Cord
+
+  \begin{itemize}
+  \item
+    \textbf{Specification}: The functionality of the safety pull-cord
+    has been replaced by limit switches now specified in LTS-156.
+  \end{itemize}
+\item
+  3.3.1 Rotation Range
+
+  \begin{itemize}
+  \item
+    Specification: The camera cable wrap shall be designed to rotate
+    over a 180 degree operational range (+/- 90 degrees either side of
+    centered position). This 180 degree range must be achievable without
+    exceeding any software limit, limit switch or hard stop,
+    consequently, an additional 8 degrees (+/-4) is required to
+    accommodate these items. The software limits shall limit the motion
+    to the 180 degree range. The limit switches shall stop the motion
+    within 2 degrees of meeting this maximum operational range. The hard
+    stops shall stop the motion within another 2 degrees of the limit
+    switches.
+  \end{itemize}
+\end{itemize}
+
+LTS-156
+
+\begin{itemize}
+\item
+  The limits shall be adjusted to nominally stop rotation for any twist
+  between the bulkhead plate and the wobble plate greater than +/- 3.5
+  degrees with adjustment range from 2.5 degrees to 5 degrees.
+\item
+  The limit switch shall be tested over the range of travel of the
+  wobble plate as specified below.
+
+  \begin{itemize}
+  \item
+    The wobble plate radial motion is +/- 110mm.
+  \item
+    The wobble plate tilt about its center is +/- 3 degrees.
+  \item
+    The wobble plate Z motion is +/- 15mm.
+  \end{itemize}
+\end{itemize}
+
+LTS-206
+
+\begin{itemize}
+\item
+  3.4.5.1 Rotator Slewing Velocity Range
+
+  \begin{itemize}
+  \item
+    \textbf{Specification:} During a rotator slew, the Camera Rotator
+    shall be able to reach any velocity between 0 and 3.5deg/sec with a
+    goal of 5.25deg/sec in both rotation directions.
+  \end{itemize}
+\item
+  3.4.4 Rotator Rotation Range
+
+  \begin{itemize}
+  \item
+    \textbf{Specification:} The Camera Rotator shall be designed to
+    rotate over a 180 degree operational range (+/-90 degrees TBR). This
+    range must be achievable without reaching any software limit, limit
+    switch or hard stop. The limit switches shall stop the motion within
+    2 degrees of meeting this maximum operational range. The hard stops
+    shall be within another 2 degrees of the limit switches.
+  \end{itemize}
+\end{itemize}
+
+LSE-80
+
+\begin{itemize}
+\item
+  CA-TS-MEC-ICD-0058 Maximum Allowed Camera Motion at Bulkhead Plate
+
+  \begin{itemize}
+  \item
+    \textbf{Specification:} The telescope shall ensure that the maximum
+    transverse and axial motions of the back end of the camera utility
+    trunk are no larger than \textbf{UTradialMotion} transverse,
+    \textbf{UTaxialMotion} axial load, and \textbf{UTrotMotion} angular
+    rotation around a radial line.
+  \item
+    UTrotMotion = 5 degrees
+  \end{itemize}
+\end{itemize}
+
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
