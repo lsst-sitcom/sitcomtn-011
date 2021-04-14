@@ -49,13 +49,64 @@ The Camera Cable Wrap / Camera Rotator synchronous motion limit switch character
 
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
+\hypertarget{executive-summary}{%
+\section{Executive Summary}\label{executive-summary}}
+
+The characterization of the limit switches that protect the utility
+lines that run from the Camera Cable Wrap to the back of the Camera was
+performed on the Tekniker designed bulkhead plate which connects to the
+Camera Cable Wrap. This characterization was performed on the Camera
+Cart on the 3\textsuperscript{rd} floor of the observatory without
+ComCam or LSSTCam installed on the Camera Rotator. The primary goal of
+the characterization was to determine the optimal placement of the limit
+switches. Prior to completing the characterization it was brought to our
+attention that the bulkhead plate had been redesigned by SLAC due to
+complexities with the camera installation. At this stage of the
+characterization, it has been determined that the limit switches should
+be placed at +/- 3.5 deg from the center line. This was largely driven
+by the distance required to release the limit switch without activating
+the opposite limit switch. This could lead to a worst case scenario
+which would lead to a 5.86 deg angular difference which is larger than
+the requirement of 5 deg. Due to differences in the design of the SLAC
+bulkhead plate and this characterization being performed without a
+representative load and CG on the Rotator, this characterization will
+need to be performed again on the SLAC bulkhead plate after ComCam is
+installed on the Rotator and before the utilities are connected.
+Depending on the results of the characterization of SLAC bulkhead plate
+the worst case maximum angular difference may need to be addressed.
+
+\hypertarget{overview}{%
+\section{Overview}\label{overview}}
+
+\hypertarget{system-overview}{%
+\subsection{System Overview}\label{system-overview}}
+
+The system being characterized is the Camera Cable Wrap (CCW), the
+Camera Rotator, and the Wobble Assembly. The Wobble assembly connects to
+the CCW via the bulkhead plate and to the ComCam/LSSTCam via the wobble
+plate per LTS-156. The bulkhead plate has a limit switches mounted in
+the positive and negative direction in relation to the 0 degree location
+and a revolute joint with adjustable detection cams in the positive and
+negative direction. These features are designed to protect the utility
+lines from damage due to excessive twist between the CCW and the Camera.
+See Figure 1 below. The bulkhead plate and the limit switches rotate
+with the CCW and the wobble plate, central linkage rod, and the
+detection cams rotate with the Camera. The Camera is rotated by the
+Camera Rotator. Activating either the positive or negative limit switch
+will generate a Safe Torque Off (STO) to the CCW Interlock System and
+the Rotator Interlock System to remove power to the drives. Without
+ComCam or LSSTCam the wobble assembly cannot be installed. In this
+situation, a single central connecting rod was connected to a metallic
+bar attached to the Camera Rotator's camera mounting ring. See Figure 2
+below. The characterization was performed on the Camera Cart on the 3rd
+floor of the observatory.
 
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
 \section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
-\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
+\bibliography{local,lsst,refs_ads,refs,books}
 
 % Make sure lsst-texmf/bin/generateAcronyms.py is in your path
 \section{Acronyms} \label{sec:acronyms}
