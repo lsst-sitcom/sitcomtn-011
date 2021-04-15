@@ -257,6 +257,257 @@ between the CCW and the Camera Rotator.
   \end{itemize}
 \end{itemize}
 
+\section{Characterization Tasks}
+
+The following sections define the tasks that were performed, the details
+of how they were performed, and the results of the task.
+
+\subsection{Positive Limit Switch Activation Location}
+
+To determine the exact location that the cam activates the positive
+limit switch we moved the CCW slowly and in small increments to find
+where the interlock was activated. We moved the CCW at a velocity of 0.1
+deg/s and in 0.05 deg increments. This was only performed with the CCW
+as it should not matter which system is used to activate the limit
+switches at this low velocity and increments.
+
+The positive limit switch was activated at \textbf{+6.16 deg}.
+
+\subsection{Positive Limit Switch Release Location}
+
+To determine where the positive limit switch is released, we first moved
+the CCW slowly and in small increments to find where the interlock was
+released. We moved the CCW at a velocity of 0.1 deg/s and in 0.05 deg
+increments. This was only performed with the CCW because the CCW has the
+override for the interlock and is defined to be the system used to
+release the limit switch.
+
+The positive limit switch was released at \textbf{+3.11 deg}.
+
+Next, we moved at the design velocity of 3.5 deg/s in a single move in
+the releasing direction to find where the limit switch is released which
+is a real-world way that we would release the interlock. At these small
+distances the velocity never reached the full design velocity. Each time
+the limit switch was activated, we did a single move in the releasing
+direction increasing by 0.05 deg until we found the location that the
+limit switch was released.
+
+The positive limit switch was released at \textbf{+3.06 deg}.
+
+\subsection{Positive Limit Switch CCW Design Velocity Stopping Distance}
+
+To determine the CCW stopping distance for the design velocity after
+activating the positive limit switch we moved the CCW in the positive
+direction with enough distance to reach a velocity of 3.5 deg/s before
+activating the limit switch. This was repeated 10 times. It was
+identified after the CCW runs were completed that the Rotator was not
+positioned at 0 deg as we thought. We adjusted the stopping distance
+values to account for the Rotator being positioned at -1.16 deg instead
+of being positioned at 0 deg. We ran an additional 10 runs with the
+Rotator positioned at 0 deg and validated that adjusting the values for
+the first set 10 runs are in line with the second set of 10 runs. To
+calculate the stopping distance after activation we subtracted the
+activation location determined in Section 3.1 from the position the CCW
+came to a complete stop.
+
+The maximum stopping distance after activating the positive limit switch
+was found to be \textbf{0.23 deg}. See Appendix A for the data points
+and Appendix B for the EFD data.
+
+\subsection{Positive Limit Switch CCW Goal Velocity Stopping Distance}
+
+To determine the CCW stopping distance for the goal velocity after
+activating the positive limit switch we moved the CCW in the positive
+direction with enough distance to reach a velocity of 5.0 deg/s before
+activating the limit switch. This was repeated 10 times. It was
+identified after the CCW runs were completed that the Rotator was not
+positioned at 0 deg as we thought. We adjusted the stopping distance
+values to account for the Rotator being positioned at -1.16 deg instead
+of being positioned at 0 deg. While the goal velocity requirement is
+5.25 deg/s the limit was already set to 5.0 deg/s in the CCW so we used
+that instead of changing the configuration. We were interested in the
+goal velocity of the CCW since the CCW is now following the Rotator and
+there is still a possibility that could drive the CCW to require a
+higher limit than the design velocity. To calculate the stopping
+distance after activation we subtracted the activation location
+determined in Section 3.1 from the position the CCW came to a complete
+stop.
+
+The maximum stopping distance after activating the positive limit switch
+was found to be \textbf{0.35 deg}. See Appendix A for the data points
+and Appendix B for the EFD data.
+
+\subsection{Positive Limit Switch Camera Rotator Design Velocity Stopping Distance}
+
+To determine the Rotator stopping distance for the design velocity after
+activating the positive limit switch we moved the Rotator in the
+negative direction with enough distance to reach a velocity of 3.5 deg/s
+before activating the limit switch. Since we defined the positive limit
+switch to be the limit switch that is activated by the CCW moving in the
+positive direction this correlates to the Rotator moving in the negative
+direction. This was repeated 10 times. To calculate the stopping
+distance after activation we subtracted the activation location
+determined in Section 3.1 from the position the Rotator came to a
+complete stop.
+
+The maximum stopping distance after activating the positive limit switch
+was found to be \textbf{0.14 deg}. See Appendix A for the data points
+and Appendix B for the EFD data.
+
+We did not find the stopping distance with the Rotator at the goal
+velocity because the limit was set in the configuration file and there
+are no plans to use the Rotator above the design velocity limit.
+
+\subsection{Negative Limit Switch Activation Location}
+
+To determine the exact location that the cam activates the negative
+limit switch we moved the CCW slowly and in small increments to find
+where the interlock was activated. We moved the CCW at a velocity of 0.1
+deg/s and in 0.05 deg increments.
+
+The negative limit switch was activated at \textbf{-2.99 deg}.
+
+\subsection{Negative Limit Switch Release Location}
+
+To determine where the negative limit switch is released, we first moved
+the CCW slowly and in small increments to find where the interlock was
+released. We moved the CCW at a velocity of 0.1 deg/s and in 0.05 deg
+increments. This was only performed with the CCW because the CCW has the
+override for the interlock and is defined to be the system used to
+release the limit switch.
+
+The negative limit switch was released at \textbf{+0.31 deg}.
+
+Next, we moved at the design velocity of 3.5 deg/s in a single move in
+the releasing direction to find where the limit switch is released which
+is a real-world way that we would release the interlock. At these small
+distances the velocity never reached the full design velocity. Each time
+the limit switch was activated, we did a single move in the releasing
+direction increasing by 0.05 deg until we found the location that the
+limit switch was released. This was repeated several times starting at
+various distances from the limit switch when activating the limit switch
+to see if the velocity to which the limit switch was activated
+influences the distance required to release the limit switch.
+
+The negative limit switch was released at \textbf{+0.30 deg}. We found
+that the velocity at which the limit switch was activated did have and
+effect on the releasing distance but it was not linear. We found that
+there was a distance of approximately 3 deg from the limit switch where
+the releasing distance required changed by 0.05 deg. We did not explore
+this any further as it is not really relevant for this characterization
+as we will take the maximum value.
+
+\subsection{Negative Limit Switch CCW Design Velocity Stopping Distance}
+
+To determine the CCW stopping distance for the design velocity after
+activating the negative limit switch we moved the CCW in the negative
+direction with enough distance to reach a velocity of 3.5 deg/s before
+activating the limit switch. This was repeated 10 times. It was
+identified after the CCW runs were completed that the Rotator was not
+positioned at 0 deg as we thought. We adjusted the stopping distance
+values to account for the Rotator being positioned at -1.16 deg instead
+of being positioned at 0 deg. We ran an additional 10 runs with the
+Rotator positioned at 0 deg and validated that adjusting the values for
+the first set 10 runs are in line with the second set of 10 runs. To
+calculate the stopping distance after activation we subtracted the
+activation location determined in Section 3.6 from the position the CCW
+came to a complete stop.
+
+The maximum stopping distance after activating the negative limit switch
+was found to be \textbf{0.23 deg}. See Appendix A for the data points
+and Appendix B for the EFD data.
+
+\subsection{Negative Limit Switch CCW Goal Velocity Stopping Distance}
+
+To determine the CCW stopping distance for the goal velocity after
+activating the negative limit switch we moved the CCW in the negative
+direction with enough distance to reach a velocity of 5.0 deg/s before
+activating the limit switch. This was repeated 10 times. It was
+identified after the CCW runs were completed that the Rotator was not
+positioned at 0 deg as we thought. We adjusted the stopping distance
+values to account for the Rotator being positioned at -1.16 deg instead
+of being positioned at 0 deg. While the goal velocity requirement is
+5.25 deg/s the limit was already set to 5.0 deg/s in the CCW so we used
+that instead of changing the configuration. We were interested in the
+goal velocity of the CCW since the CCW is now following the Rotator and
+there is still a possibility that could drive the CCW to require a
+higher limit than the design velocity. To calculate the stopping
+distance after activation we subtracted the activation location
+determined in Section 3.6 from the position the CCW came to a complete
+stop.
+
+The maximum stopping distance after activating the negative limit switch
+was found to be \textbf{0.34 deg}. See Appendix A for the data points
+and Appendix B for the EFD data.
+
+\subsection{Negative Limit Switch Camera Rotator Design Velocity Stopping Distance }
+
+To determine the Rotator stopping distance for the design velocity after
+activating the negative limit switch we moved the Rotator in the
+positive direction with enough distance to reach a velocity of 3.5 deg/s
+before activating the limit switch. Since we defined the negative limit
+switch to be the limit switch that is activated by the CCW moving in the
+negative direction this correlates to the Rotator moving in the positive
+direction. This was repeated 10 times. To calculate the stopping
+distance after activation we subtracted the activation location
+determined in Section 3.6 from the position the Rotator came to a
+complete stop.
+
+The maximum stopping distance after activating the negative limit switch
+was found to be \textbf{0.36 deg}. See Appendix A for the data points
+and Appendix B for the EFD data.
+
+We did not find the stopping distance with the Rotator at the goal
+velocity because the limit was set in the configuration file and there
+are no plans to use the Rotator above the design velocity limit.
+
+\section{Recommendations}
+
+\subsection{Characterization Results}
+
+The table below provides a summary of the calculations performed on the
+data captured to determine the result of the tasks define in Section 3.
+
+Table 1: Characterization Calculation Results
+
+\begin{longtable}[]{@{}llllllll@{}}
+\toprule
+CCW Positive Limit Switch & ~ & ~ & Avg & Max & Std Dev & & \\
+\midrule
+\endhead
+Activation location: & 6.16 & & & & & & \\
+Release location: & 3.11 & Single motion release location: & 3.06 & 3.5
+deg/s stopping location: & 6.3655 & 6.39 & 0.0128355 \\
+Incremental delta: & 3.05 & Single motion delta: & 3.1 & 5.0 deg/s
+stopping location: & 6.478 & 6.51 & 0.01777639 \\
+& & & & 3.5 deg/s stopping distance: & 0.2055 & \textbf{0.23} & \\
+& & & & 5.0 deg/s stopping distance: & 0.318 & \textbf{0.35} & \\
+& & & & & & & \\
+CCW Negative Limit Switch & ~ & ~ & ~ & Avg & Max & Std Dev & \\
+Activation location: & -2.99 & & & & & & \\
+Release location: & 0.31 & Single motion release location: & 0.3 & 3.5
+deg/s stopping location: & -3.1895 & -3.22 & 0.01395529 \\
+Incremental delta: & 3.3 & Single motion delta: & 3.29 & 5.0 deg/s
+stopping location: & -3.307 & -3.33 & 0.01676305 \\
+& & & & 3.5 deg/s stopping distance: & -0.1995 & \textbf{0.23} & \\
+& & & & 5.0 deg/s stopping distance: & -0.317 & \textbf{0.34} & \\
+& & & & & & & \\
+Rotator Positive Limit Switch & ~ & ~ & ~ & Avg & Max & Std Dev & \\
+Activation location: & -6.16 & & & & & & \\
+& & & & 3.5 deg/s stopping location: & -6.28 & -6.3 & 0.01549193 \\
+& & & & 5.0 deg/s stopping location: & N/A & N/A & N/A \\
+& & & & 3.5 deg/s stopping distance: & 0.12 & \textbf{0.14} & \\
+& & & & 5.0 deg/s stopping distance: & N/A & \textbf{N/A} & \\
+& & & & & & & \\
+Rotator Negative Limit Switch & ~ & ~ & ~ & Avg & Max & Std Dev & \\
+Activation location: & 2.99 & & & & & & \\
+& & & & 3.5 deg/s stopping location: & 3.283 & 3.35 & 0.03034798 \\
+& & & & 5.0 deg/s stopping location: & N/A & N/A & N/A \\
+& & & & 3.5 deg/s stopping distance: & 0.293 & \textbf{0.36} & \\
+& & & & 5.0 deg/s stopping distance: & N/A & \textbf{N/A} & \\
+\bottomrule
+\end{longtable}
+
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
