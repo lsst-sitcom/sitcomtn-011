@@ -5,14 +5,11 @@
 % Package imports go here.
 \usepackage{graphicx} % Formats for images
 \usepackage{booktabs} % For \toprule, \midrule and \bottomrule
-\usepackage{siunitx} % Formats the units and values
+%\usepackage{siunitx} % Formats the units and values
 \usepackage{multirow} % Required for multirows
 
 % Local commands go here.
-\sisetup{
-  round-mode          = places, % Rounds numbers
-  round-precision     = 3, % to 2 places
-}
+
 %If you want glossaries
 %\input{aglossary.tex}
 %\makeglossaries
@@ -477,7 +474,7 @@ data captured to determine the result of the tasks define in Section 3.
   \begin{center}
     \caption{Characterization Calculation Results}
     \label{tab:table1}
-    \begin{tabular}{r|S|r|S|r|S|S|S}
+    \begin{tabular}{r|c|r|c|r|c|c|c}
     \multicolumn{5}{l|}{CCW Positive Limit Switch} & Avg & Max & Std Dev\\
     \midrule
     Activation location: & 6.16 & & & & & & \\
