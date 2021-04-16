@@ -443,7 +443,7 @@ The maximum stopping distance after activating the negative limit switch
 was found to be \textbf{0.34 deg}. See Appendix A for the data points
 and Appendix B for the EFD data.
 
-\subsection{Negative Limit Switch Camera Rotator Design Velocity Stopping Distance }
+\subsection{Negative Limit Switch Camera Rotator Design Velocity Stopping Distance}
 
 To determine the Rotator stopping distance for the design velocity after
 activating the negative limit switch we moved the Rotator in the
@@ -518,7 +518,7 @@ data captured to determine the result of the tasks define in Section 3.
     Activation location: & -6.16 & & & & \\
     & & 3.5 deg/s stopping location: & -6.28 & -6.30 & 0.01549 \\
     & & 5.0 deg/s stopping location: & N/A & N/A & N/A \\
-    & & 3.5 deg/s stopping distance: & 0.12 & \textbf{0.14} & \\
+    & & 3.5 deg/s stopping distance: &  0.12 & \textbf{ 0.14} & \\
     & & 5.0 deg/s stopping distance: & N/A & \textbf{N/A} & \\
     \end{tabular}
   \end{center}
@@ -528,17 +528,55 @@ data captured to determine the result of the tasks define in Section 3.
   \begin{center}
     \caption{Rotator Negative Limit Switch Characterization Calculation Results}
     \label{tab:table4}
-    \begin{tabular}{r|c|r|c|r|c|c|c}
-    \multicolumn{5}{l|}{\textbf{Rotator Negative Limit Switch}} & Avg & Max & Std Dev\\
+    \begin{tabular}{r|c|r|c|c|c}
+    \multicolumn{3}{l|}{\textbf{Rotator Negative Limit Switch}} & Avg & Max & Std Dev\\
     \midrule
     Activation location: & 2.99 & & & & & & \\
-    & & & & 3.5 deg/s stopping location: & 3.283 & 3.35 & 0.03035 \\
-    & & & & 5.0 deg/s stopping location: & N/A & N/A & N/A \\
-    & & & & 3.5 deg/s stopping distance: & 0.293 & \textbf{0.36} & \\
-    & & & & 5.0 deg/s stopping distance: & N/A & \textbf{N/A} & \\
+    & & 3.5 deg/s stopping location: & 3.283 & 3.35 & 0.03035 \\
+    & & 5.0 deg/s stopping location: & N/A & N/A & N/A \\
+    & & 3.5 deg/s stopping distance: & 0.293 & \textbf{0.36} & \\
+    & & 5.0 deg/s stopping distance: & N/A & \textbf{N/A} & \\
     \end{tabular}
   \end{center}
 \end{table}
+
+\subsection{Limit Switch Activation Location Recommendation}
+
+Based on the maximum distance required to release the limit switch the
+closest activation location, with no margin, would be +/- 3.3 deg
+without activating the opposite limit switch. The LSE-80 requirement for
+the angular rotation between the bulkhead plate and the wobble plate is
+5 degrees so that should be the minimum slack in the utility lines and
+the maximum angular rotation between the CCW and the Rotator after
+activating the limit switch and coming to a complete stop.
+
+Based on the requirements and characterization of the limit switches we
+recommend that the limit switch activation location should be
+\textbf{+/- 3.5 deg}.
+
+\subsection{Remaining Work}
+
+Shortly before completing the limit switch characterization it was
+identified that the camera team at SLAC had redesigned the bulkhead
+plate and how the limit switches and activation cams are connected to
+the bulkhead plate. The limit switches have been confirmed to be the
+same model as the Tekniker design. See Figure \ref{fig:Figure_3} below for a comparison
+of the designs with the Tekniker design on the left and the SLAC design
+on the right.
+
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{media/teknikerDesign.png}
+    \caption{Tekniker Design}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{media/slacDesign.png}
+    \caption{SLAC Design}
+  \end{subfigure}
+  \caption{CCW Bulkhead Deisgn Comparison}
+  \label{fig:Fugure_3}
+\end{figure}
 
 \end{landscape}
 
