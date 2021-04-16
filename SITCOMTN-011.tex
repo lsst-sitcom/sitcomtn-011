@@ -469,27 +469,79 @@ are no plans to use the Rotator above the design velocity limit.
 
 \subsection{Characterization Results}
 
-The table below provides a summary of the calculations performed on the
+The tables below provides a summary of the calculations performed on the
 data captured to determine the result of the tasks define in Section 3.
 
 \begin{table}[h!]
   \begin{center}
-    \caption{Characterization Calculation Results}
+    \caption{CCW Positive Limit Switch Characterization Calculation Results}
     \label{tab:table1}
     \begin{tabular}{r|c|r|c|r|c|c|c}
-    \multicolumn{5}{l|}{CCW Positive Limit Switch} & Avg & Max & Std Dev\\
+    \multicolumn{5}{l|}{\textbf{CCW Positive Limit Switch}} & Avg & Max & Std Dev\\
     \midrule
     Activation location: & 6.16 & & & & & & \\
     Release location: & 3.11 & Single motion release location: & 3.06 & 3.5
-    deg/s stopping location: & 6.3655 & 6.39 & 0.0128355 \\
-    Incremental delta: & 3.05 & Single motion delta: & 3.1 & 5.0 deg/s
-    stopping location: & 6.478 & 6.51 & 0.01777639 \\
-    & & & & 3.5 deg/s stopping distance: & 0.2055 & \textbf{0.23} & \\
+    deg/s stopping location: & 6.366 & 6.39 & 0.01284 \\
+    Incremental delta: & 3.05 & Single motion delta: & 3.10 & 5.0 deg/s
+    stopping location: & 6.478 & 6.51 & 0.01778 \\
+    & & & & 3.5 deg/s stopping distance: & 0.206 & \textbf{0.23} & \\
     & & & & 5.0 deg/s stopping distance: & 0.318 & \textbf{0.35} & \\
     \end{tabular}
   \end{center}
 \end{table}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{CCW Negative Limit Switch Characterization Calculation Results}
+    \label{tab:table2}
+    \begin{tabular}{r|c|r|c|r|c|c|c}
+    \multicolumn{5}{l|}{\textbf{CCW Negative Limit Switch}} & Avg & Max & Std Dev\\
+    \midrule
+    Activation location: & -2.99 & & & & & & \\
+    Release location: & 0.31 & Single motion release location: & 0.30 & 3.5
+    deg/s stopping location: & -3.19 & -3.22 & 0.01396 \\
+    Incremental delta: & 3.30 & Single motion delta: & 3.29 & 5.0 deg/s
+    stopping location: & -3.307 & -3.33 & 0.01676 \\
+    & & & & 3.5 deg/s stopping distance: & -0.200 & \textbf{0.23} & \\
+    & & & & 5.0 deg/s stopping distance: & -0.317 & \textbf{0.34} & \\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Rotator Positive Limit Switch Characterization Calculation Results}
+    \label{tab:table3}
+    \begin{tabular}{r|c|r|c|r|c|c|c}
+    \multicolumn{5}{l|}{\textbf{Rotator Positive Limit Switch}} & Avg & Max & Std Dev\\
+    \midrule
+    Activation location: & -6.16 & & & & & & \\
+    & & & & 3.5 deg/s stopping location: & -6.28 & -6.30 & 0.01549 \\
+    & & & & 5.0 deg/s stopping location: & N/A & N/A & N/A \\
+    & & & & 3.5 deg/s stopping distance: & 0.12 & \textbf{0.14} & \\
+    & & & & 5.0 deg/s stopping distance: & N/A & \textbf{N/A} & \\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Rotator Negative Limit Switch Characterization Calculation Results}
+    \label{tab:table4}
+    \begin{tabular}{r|c|r|c|r|c|c|c}
+    \multicolumn{5}{l|}{\textbf{Rotator Negative Limit Switch}} & Avg & Max & Std Dev\\
+    \midrule
+    Activation location: & 2.99 & & & & & & \\
+    & & & & 3.5 deg/s stopping location: & 3.283 & 3.350 & 0.03035 \\
+    & & & & 5.0 deg/s stopping location: & N/A & N/A & N/A \\
+    & & & & 3.5 deg/s stopping distance: & 0.293 & \textbf{0.36} & \\
+    & & & & 5.0 deg/s stopping distance: & N/A & \textbf{N/A} & \\
+    \end{tabular}
+  \end{center}
+\end{table}
+
 \end{landscape}
+
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
