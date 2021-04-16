@@ -582,12 +582,60 @@ on the right.
   \label{fig:Figure_3}
 \end{figure}
 
+The limit switches have been confirmed to be the same model. The angle
+between the limit switches in the Tekniker design and the angle between
+the limit switches in the SLAC design have been confirmed to both be 100
+deg.
 
+The profile of the detection cams are similar with the same chamfer
+angle however the overall width of the cam and the width of the chamfer
+is slightly smaller on the SLAC detection cams. See Figure \ref{fig:Figure_4} below for a
+comparison of the designs with the Tekniker design (0000053538) on the
+left and the SLAC design (LCA-17138) on the right. The impact on the
+stopping distance and release location these differences have will need
+to be determined.
 
+\begin{figure}[h!]
+  \centering
+  \begin{subfigure}{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{media/teknikerDrawing.png}
+    \caption{Tekniker Design}
+  \end{subfigure}
+  \begin{subfigure}{0.45\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{media/slacDrawing.png}
+    \caption{SLAC Design}
+  \end{subfigure}
+  \caption{Detection Cam Deisgn Comparison}
+  \label{fig:Figure_4}
+\end{figure}
 
+Due to the differences in the designs of the Tekniker and SLAC bulkhead
+plates this characterization will need to be performed again on the SLAC
+designed bulkhead plate after being installed with ComCam and before the
+utility lines are connected.
 
+Looking at the worst case scenario that could create the maximum angular
+difference with the limit switches activated at +/- 3.5 deg would result
+in a maximum angular difference of \textbf{5.86 deg}. This scenario
+would occur when the CCW activates the end of travel limit switch which
+will stop the system within +/- 92 deg and the Rotator activates the
+synchronous motion limit switch in the opposite direction which has a
+maximum stopping distance of 0.36 deg at approximately the same time.
+This compounds to 2 deg + 3.5 deg + 0.36 deg which is the 5.86 deg. This
+will need to be recalculated after the characterization of the SLAC
+bulkhead plate with ComCam installed so that the Rotator is loaded with
+the design mass and CG.
 
 \appendix
+\section{Data Points}
+\subsection{CCW Positive Limit Switch Data Points}
+\subsection{CCW Negative Limit Switch Data Points}
+\subsection{Rotator Positive Limit Switch Data Points}
+\subsection{Rotator Negative Limit Switch Data Points}
+
+\section{EFD Plots}
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
 \section{References} \label{sec:bib}
