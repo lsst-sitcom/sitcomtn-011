@@ -8,7 +8,10 @@
 \usepackage{siunitx} % Formats the units and values
 \usepackage{longtable} % To display tables on several pages
 % Local commands go here.
-
+\sisetup{
+  round-mode          = places, % Rounds numbers
+  round-precision     = 3, % to 2 places
+}
 %If you want glossaries
 %\input{aglossary.tex}
 %\makeglossaries
