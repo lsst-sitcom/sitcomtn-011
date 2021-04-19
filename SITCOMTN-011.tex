@@ -8,9 +8,13 @@
 \usepackage{multirow} % Required for multirows
 \usepackage{pdflscape}
 \usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
 
 % Local commands go here.
-
+\pgfplotsset{width=7.5cm,compat=1.12}
+\usepgfplotslibrary{fillbetween}
 %If you want glossaries
 %\input{aglossary.tex}
 %\makeglossaries
@@ -631,6 +635,41 @@ the design mass and CG.
 \appendix
 \section{Data Points}
 \subsection{CCW Positive Limit Switch Data Points}
+\begin{table}[h!]
+  \begin{center}
+    \caption{CCW Positive Limit Switch Data Points}
+    \label{tab:table5}
+    \begin{tabular}{c|c|c|c}
+    \multicolumn{2}{l|}{\textbf{3.5 Deg/s}} & \multicolumn{2}{l|}{\textbf{5.0 Deg/s}}\\
+    \midrule
+    Run & Location & Run & Location \\
+    1 & 6.39 & 1 & 6.48 \\
+    2 & 6.37 & 2 & 6.48 \\
+    3 & 6.39 & 3 & 6.51 \\
+    4 & 6.38 & 4 & 6.45 \\
+    5 & 6.37 & 5 & 6.50 \\
+    6 & 6.37 & 6 & 6.46 \\
+    7 & 6.36 & 7 & 6.48 \\
+    8 & 6.37 & 8 & 6.46 \\
+    9 & 6.35 & 9 & 6.47 \\
+    10 & 6.37 & 10 & 6.49 \\
+    11 & 6.37 & & \\
+    12 & 6.35 & & \\
+    13 & 6.37 & & \\
+    14 & 6.34 & & \\
+    15 & 6.37 & & \\
+    16 & 6.37 & & \\
+    17 & 6.36 & & \\
+    18 & 6.35 & & \\
+    19 & 6.35 & & \\
+    20 & 6.36 & & \\
+    Avg & \textbf{6.3655} & Avg & \textbf{6.478} \\
+    Max & \textbf{6.39} & Max & \textbf{6.51} \\
+    Std Dev & \textbf{0.0128355} & Std Dev & \textbf{0.01777639} \\
+    \bottomrule
+    \end{tabular}
+  \end{center}
+\end{table}
 \subsection{CCW Negative Limit Switch Data Points}
 \subsection{Rotator Positive Limit Switch Data Points}
 \subsection{Rotator Negative Limit Switch Data Points}
