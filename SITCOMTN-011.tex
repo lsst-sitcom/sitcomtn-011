@@ -636,11 +636,11 @@ the design mass and CG.
 \appendix
 \section{Data Points}
 \subsection{CCW Positive Limit Switch Data Points}
-\begin{minipage}[t]{0.49\textwidth}
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}{0.49\linewidth}
     \centering
     \begin{table}
-    %\captionof{table}{CCW Positive Limit Switch Data Points}
-    %\label{tab:table5}
     \begin{tabular}{c|c|c|c}
     \multicolumn{2}{l|}{\textbf{3.5 Deg/s}} & \multicolumn{2}{l|}{\textbf{5.0 Deg/s}}\\
     \midrule
@@ -671,9 +671,8 @@ the design mass and CG.
     \bottomrule
     \end{tabular}
 \end{table}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.49\textwidth}
+  \end{subfigure}
+  \begin{subfigure}{0.49\linewidth}
     \centering
     \begin{tikzpicture}
     \begin{axis}[
@@ -707,7 +706,11 @@ the design mass and CG.
     \legend{5.0 deg/s}
     \end{axis}
     \end{tikzpicture}
-\end{minipage}
+  \end{subfigure}
+  \caption{CCW Positive Limit Switch Data Points}
+  \label{tab:table5}
+\end{figure}
+
 \subsection{CCW Negative Limit Switch Data Points}
 \subsection{Rotator Positive Limit Switch Data Points}
 \subsection{Rotator Negative Limit Switch Data Points}
