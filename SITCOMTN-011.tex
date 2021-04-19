@@ -636,12 +636,12 @@ the design mass and CG.
 \appendix
 \section{Data Points}
 \subsection{CCW Positive Limit Switch Data Points}
-\begin{figure}[ht]
+\begin{figure}[h!]
   \centering
   \begin{subfigure}{0.49\linewidth}
     \centering
     \begin{tabular}{c|c|c|c}
-    \multicolumn{2}{l|}{\textbf{3.5 Deg/s}} & \multicolumn{2}{l|}{\textbf{5.0 Deg/s}}\\
+    \multicolumn{2}{l|}{\textbf{3.5 Deg/s}} & \multicolumn{2}{l}{\textbf{5.0 Deg/s}}\\
     \midrule
     Run & Location & Run & Location \\
     1 & 6.39 & 1 & 6.48 \\
@@ -710,7 +710,7 @@ the design mass and CG.
 \end{figure}
 
 \subsection{CCW Negative Limit Switch Data Points}
-\begin{figure}[ht]
+\begin{figure}[h!]
   \centering
   \begin{subfigure}{0.49\linewidth}
     \centering
@@ -779,10 +779,63 @@ the design mass and CG.
     \end{axis}
     \end{tikzpicture}
   \end{subfigure}
-  \caption{CCW Positive Limit Switch Data Points}
-  \label{tab:table5}
+  \caption{CCW Negative Limit Switch Data Points}
+  \label{tab:table6}
 \end{figure}
 \subsection{Rotator Positive Limit Switch Data Points}
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}{0.49\linewidth}
+    \centering
+    \begin{tabular}{c|c|}
+    \multicolumn{2}{l|}{\textbf{3.5 Deg/s}}\\
+    \midrule
+    Run & Location \\
+    1 & -6.29 \\
+    2 & -6.29 \\
+    3 & -6.29 \\
+    4 & -6.30 \\
+    5 & -6.30 \\
+    6 & -6.26 \\
+    7 & -6.26 \\
+    8 & -6.27 \\
+    9 & -6.28 \\
+    10 & -6.26 \\
+    \midrule
+    Avg & \textbf{-6.28} \\
+    Max & \textbf{-6.3} \\
+    Std Dev & \textbf{0.01549193} \\
+    \bottomrule
+    \end{tabular}
+  \end{subfigure}
+  \begin{subfigure}{0.49\linewidth}
+    \centering
+    \begin{tikzpicture}
+    \begin{axis}[
+    xlabel={Run Number},
+    ylabel={Stopping Location [deg]},
+    xmin=0, xmax=20,
+    ymin=-7, ymax=-6,
+    xtick={0,2,4,6,8,10,12,14,16,18,20},
+    ytick={0,-7,-6.8,-6.6,-6.4,-6.2,-7},
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+    ]
+    \addplot[
+    color=blue,
+    mark=x,
+    ]
+    coordinates {
+    (1,-6.29)(2,-6.29)(3,-6.29)(4,-6.30)(5,-6.30)(6,-6.26)(7,-6.26)(8,-6.27)(9,-6.28)(10,-6.26)
+    };
+    \legend{3.5 deg/s}
+    \end{axis}
+    \end{tikzpicture}
+  \end{subfigure}
+  \caption{Rotator Positive Limit Switch Data Points}
+  \label{tab:table7}
+\end{figure}
 \subsection{Rotator Negative Limit Switch Data Points}
 
 \section{EFD Plots}
