@@ -319,8 +319,8 @@ activation location determined in Section 3.1 from the position the CCW
 came to a complete stop.
 
 The maximum stopping distance after activating the positive limit switch
-was found to be \textbf{0.23 deg}. See Appendix A for the data points
-and Appendix B for the EFD data.
+was found to be \textbf{0.23 deg}. See Appendix \ref{sec:data} for the data points
+and Appendix \ref{sec:efd} for the EFD data.
 
 \subsection{Positive Limit Switch CCW Goal Velocity Stopping Distance}
 
@@ -342,8 +342,8 @@ determined in Section 3.1 from the position the CCW came to a complete
 stop.
 
 The maximum stopping distance after activating the positive limit switch
-was found to be \textbf{0.35 deg}. See Appendix A for the data points
-and Appendix B for the EFD data.
+was found to be \textbf{0.35 deg}. See Appendix \ref{sec:data} for the data points
+and Appendix \ref{sec:efd} for the EFD data.
 
 \subsection{Positive Limit Switch Camera Rotator Design Velocity Stopping Distance}
 
@@ -359,8 +359,8 @@ determined in Section 3.1 from the position the Rotator came to a
 complete stop.
 
 The maximum stopping distance after activating the positive limit switch
-was found to be \textbf{0.14 deg}. See Appendix A for the data points
-and Appendix B for the EFD data.
+was found to be \textbf{0.14 deg}. See Appendix \ref{sec:data} for the data points
+and Appendix \ref{sec:efd} for the EFD data.
 
 We did not find the stopping distance with the Rotator at the goal
 velocity because the limit was set in the configuration file and there
@@ -422,8 +422,8 @@ activation location determined in Section 3.6 from the position the CCW
 came to a complete stop.
 
 The maximum stopping distance after activating the negative limit switch
-was found to be \textbf{0.23 deg}. See Appendix A for the data points
-and Appendix B for the EFD data.
+was found to be \textbf{0.23 deg}. See Appendix \ref{sec:data} for the data points
+and Appendix \ref{sec:efd} for the EFD data.
 
 \subsection{Negative Limit Switch CCW Goal Velocity Stopping Distance}
 
@@ -445,8 +445,8 @@ determined in Section 3.6 from the position the CCW came to a complete
 stop.
 
 The maximum stopping distance after activating the negative limit switch
-was found to be \textbf{0.34 deg}. See Appendix A for the data points
-and Appendix B for the EFD data.
+was found to be \textbf{0.34 deg}. See Appendix \ref{sec:data} for the data points
+and Appendix \ref{sec:efd} for the EFD data.
 
 \subsection{Negative Limit Switch Camera Rotator Design Velocity Stopping Distance}
 
@@ -462,8 +462,8 @@ determined in Section 3.6 from the position the Rotator came to a
 complete stop.
 
 The maximum stopping distance after activating the negative limit switch
-was found to be \textbf{0.36 deg}. See Appendix A for the data points
-and Appendix B for the EFD data.
+was found to be \textbf{0.36 deg}. See Appendix \ref{sec:data} for the data points
+and Appendix \ref{sec:efd} for the EFD data.
 
 We did not find the stopping distance with the Rotator at the goal
 velocity because the limit was set in the configuration file and there
@@ -634,7 +634,19 @@ bulkhead plate with ComCam installed so that the Rotator is loaded with
 the design mass and CG.
 \newpage
 \appendix
-\section{Data Points}
+% Include all the relevant bib files.
+% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+\section{References} \label{sec:bib}
+\renewcommand{\refname}{} % Suppress default Bibliography section
+\bibliography{local,lsst,refs_ads,refs,books}
+%\citep{Drawing 0000053538}
+%\citep{Drawing 0000053526}
+% Make sure lsst-texmf/bin/generateAcronyms.py is in your path
+\section{Acronyms} \label{sec:acronyms}
+\input{acronyms.tex}
+% If you want glossary uncomment below -- comment out the two lines above
+%\printglossaries
+\section{Data Points} \label{sec:data}
 \subsection{CCW Positive Limit Switch Data Points}
 \begin{figure}[h!]
   \centering
@@ -891,7 +903,7 @@ the design mass and CG.
   \label{tab:table8}
 \end{figure}
 \newpage
-\section{EFD Plots}
+\section{EFD Plots} \label{sec:efd}
 \subsection{CCW Positive Limit Switch Design Velocity EFD Data}
 \begin{figure}
   \includegraphics[width=\linewidth]{media/CCW_design_speed_pos_test1.png}
@@ -1377,18 +1389,5 @@ the design mass and CG.
   \caption{Rotator\_NEG\_RUN\_10}
   \label{fig:Rotator_NEG_RUN_10}
 \end{figure}
-\newpage
-% Include all the relevant bib files.
-% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
-\section{References} \label{sec:bib}
-\renewcommand{\refname}{} % Suppress default Bibliography section
-\bibliography{local,lsst,refs_ads,refs,books}
-%\citep{Drawing 0000053538}
-%\citep{Drawing 0000053526}
-% Make sure lsst-texmf/bin/generateAcronyms.py is in your path
-\section{Acronyms} \label{sec:acronyms}
-\input{acronyms.tex}
-% If you want glossary uncomment below -- comment out the two lines above
-%\printglossaries
 
 \end{document}
